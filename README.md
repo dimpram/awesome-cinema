@@ -5,7 +5,7 @@ An awesome movie reservation system!
 _Awesome Cinema Dashboard_
 
 ## What is it?
-Awesome Cinema is a **simple movie reservation** system and it's part of my university assignment in Databases 1 course. It's also my first ever fullstack web application made entirely from scratch starting from the database ERD to frontend interface. The web app is based on LAMP (Linux, Apache, Mariadb, PHP) stack and although its far from being perfect it can provide a good starting point for a real Cinema reservation system.
+Awesome Cinema is a **simple movie reservation** system based on LAMP (Linux, Apache, Mariadb, PHP) stack and it's part of my university assignment in Databases 1 course. It's also my first ever fullstack web application made entirely from scratch starting from the database ERD to frontend interface. Although this web app is far from being perfect it can provide a good starting point for a real Cinema reservation system.
 
 ## Features
 - Manage Customers
