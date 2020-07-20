@@ -1,5 +1,5 @@
 <?php
-require("/srv/http/plain/config/database.php"); // Connection to the database
+require("/srv/http/awesome_cinema/config/database.php"); // Connection to the database
 
 
 // Totals

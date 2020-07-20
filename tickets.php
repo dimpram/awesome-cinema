@@ -1,5 +1,5 @@
 <?php
-    require("/srv/http/plain/config/database.php"); // Connection to the database
+    require("/srv/http/awesome_cinema/config/database.php"); // Connection to the database
     
     // Function that returns percent of something
     function getPercentOfNumber($number, $percent){
@@ -12,7 +12,7 @@
     $unemployed_d = 30;
 
     if (!isset($_GET["print_c"]) && !isset($_GET["print_s"])) {
-        header("location: /plain/reservations.php");                // Redirect to the reservations.php page
+        header("location: /awesome_cinema/reservations.php");                // Redirect to the reservations.php page
     } else if(isset($_GET["print_c"]) && isset($_GET["print_s"])) {
 
         // Getting values from GET

@@ -1,5 +1,5 @@
 <?php
-require("/srv/http/plain/config/database.php"); // Connection to the database
+require("/srv/http/awesome_cinema/config/database.php"); // Connection to the database
 session_start();                                // Start session;
 
 // Default values
@@ -31,7 +31,7 @@ if (isset($_POST["save"])) {
     if ($conn->query($query)) {
         $_SESSION['message'] = "New Customer has been added!";  // Success message
         $_SESSION['msg-type'] = "success";                      // Used for selecting css classes
-        header("location: /plain/customers.php");               // Redirect to the sessions.php page
+        header("location: /awesome_cinema/customers.php");               // Redirect to the sessions.php page
     } else {
         die($conn->error);    // Print error
     }
@@ -41,14 +41,6 @@ if (isset($_POST["save"])) {
 if (isset($_GET["delete"])) {
 
     $customer_id = $_GET['delete'];  // Getting data from GET
-
-    // Delete from tickets
-    $query = "DELETE FROM ticket WHERE customer_id=$customer_id";   // Create query
-    $conn->query($query) or die($conn->error);                      // Print error
-
-    // Delete from reservations
-    $query = "DELETE FROM reserves WHERE customer_id=$customer_id"; // Create query
-    $conn->query($query) or die($conn->error);                      // Print error
 
     $query = "DELETE FROM customer WHERE customer_id=$customer_id";  // Create query
 
@@ -104,7 +96,7 @@ if (isset($_POST['update'])) {
     if ($conn->query($query)) {
         $_SESSION['message'] = "Customer has been updated!";    // Success message
         $_SESSION['msg-type'] = "warning";                      // Used for selecting css classes
-        header("location: /plain/customers.php");               // Redirect to the sessions.php page
+        header("location: /awesome_cinema/customers.php");               // Redirect to the sessions.php page
     } else {
         die($conn->error);    // Print error
     }

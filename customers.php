@@ -1,5 +1,5 @@
 <?php
-    require("/srv/http/plain/proc/customers.php");
+    require("/srv/http/awesome_cinema/proc/customers.php");
 ?>
 
 <!DOCTYPE html>

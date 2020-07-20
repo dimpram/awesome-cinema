@@ -1,5 +1,5 @@
 <?php
-require("/srv/http/plain/config/database.php"); // Connection to the database
+require("/srv/http/awesome_cinema/config/database.php"); // Connection to the database
 session_start();                                // Start session;
 
 // Variables & default values
@@ -99,7 +99,7 @@ if (isset($_POST["save"])) {
             }
             $_SESSION['message'] = "New Reservation has been added!";   // Success message
             $_SESSION['msg-type'] = "success";                          // Used for selecting css classes
-            header("location: /plain/reservations.php");                // Redirect to the sessions.php page
+            header("location: /awesome_cinema/reservations.php");                // Redirect to the sessions.php page
         }
     }
 
@@ -228,7 +228,7 @@ if (isset($_POST['update'])) {
     }
     $_SESSION['message'] = "New Reservation has been updated!";   // Success message
     $_SESSION['msg-type'] = "warning";                          // Used for selecting css classes
-    header("location: /plain/reservations.php");                // Redirect to the sessions.php page
+    header("location: /awesome_cinema/reservations.php");                // Redirect to the sessions.php page
 }
 
 // Display all the reservations

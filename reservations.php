@@ -1,5 +1,5 @@
 <?php
-    require("/srv/http/plain/proc/reservations.php");
+    require("/srv/http/awesome_cinema/proc/reservations.php");
 ?>
 <!DOCTYPE html>
 <html lang="en">

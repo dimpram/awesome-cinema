@@ -1,5 +1,5 @@
 <?php
-    require("/srv/http/plain/proc/dashboard.php");
+    require("/srv/http/awesome_cinema/proc/dashboard.php");
 ?>
 
 <!DOCTYPE html>

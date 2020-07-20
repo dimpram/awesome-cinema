@@ -1,5 +1,5 @@
 <?php
-    require("/srv/http/plain/proc/sessions.php");
+    require("/srv/http/awesome_cinema/proc/sessions.php");
 ?>
 
 <!DOCTYPE html>

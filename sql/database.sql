@@ -96,15 +96,15 @@ SHOW TABLES;
 -- Session table
 ALTER TABLE session
 ADD (
-  FOREIGN KEY(movie_id) REFERENCES movie(movie_id) ON DELETE SET NULL,
-  FOREIGN KEY(room_id) REFERENCES room(room_id) ON DELETE SET NULL
+  FOREIGN KEY(movie_id) REFERENCES movie(movie_id) ON DELETE CASCADE,
+  FOREIGN KEY(room_id) REFERENCES room(room_id) ON DELETE CASCADE
 );
 
 -- Ticket table
 ALTER TABLE ticket
 ADD (
-  FOREIGN KEY(session_id) REFERENCES session(session_id) ON DELETE SET NULL,
-  FOREIGN KEY(customer_id) REFERENCES customer(customer_id) ON DELETE SET NULL
+  FOREIGN KEY(session_id) REFERENCES session(session_id) ON DELETE CASCADE,
+  FOREIGN KEY(customer_id) REFERENCES customer(customer_id) ON DELETE CASCADE
 );
 
 -- Reserves table

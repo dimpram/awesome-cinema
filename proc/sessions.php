@@ -1,5 +1,5 @@
 <?php
-require("/srv/http/plain/config/database.php"); // Connection to the database
+require("/srv/http/awesome_cinema/config/database.php"); // Connection to the database
 session_start();                                // Start session;
 
 // Default values
@@ -31,7 +31,7 @@ if (isset($_POST["save"])) {
     if ($conn->query($query)) {
         $_SESSION['message'] = "New Session has been added!";   // Success message
         $_SESSION['msg-type'] = "success";                      // Used for selecting css classes
-        header("location: /plain/sessions.php");                // Redirect to the sessions.php page
+        header("location: /awesome_cinema/sessions.php");                // Redirect to the sessions.php page
     } else {
         die($conn->error);    // Print error
     }
@@ -40,14 +40,7 @@ if (isset($_POST["save"])) {
 // DELETE session
 if (isset($_GET["delete"])) {
 
-    $session_id = $_GET['delete'];  // Getting data from GET
-
-    // Delete also from tickets
-    $query = "DELETE FROM ticket WHERE session_id=$session_id";     // Create query
-    $conn->query($query) or die($conn->error);                      // Print error
-
-    $query = "DELETE FROM reserves WHERE session_id=$session_id";    // Create query
-    $conn->query($query) or die($conn->error);                      // Print error
+    $session_id = $_GET['delete'];                                  // Getting data from GET
 
     $query = "DELETE FROM session WHERE session_id=$session_id";    // Create query
 
@@ -124,7 +117,7 @@ if (isset($_POST['update'])) {
 
         $_SESSION['message'] = "Session has been updated!"; // Success message
         $_SESSION['msg-type'] = "warning";                   // Used for selecting css classes
-        header("location: /plain/sessions.php");                // Redirect to the sessions.php page
+        header("location: /awesome_cinema/sessions.php");                // Redirect to the sessions.php page
     } else {
         die($conn->error);    // Print error
     }
