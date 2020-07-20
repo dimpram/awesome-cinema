@@ -1,7 +1,7 @@
 <?php 
 $db_uri = "localhost";	
-$db_user = "root";
-$db_pass = "";            // Mariadb is set to not use password on user root
+$db_user = "root";          // Enter your own mysql username
+$db_pass = "";              // Enter your own mysql password
 $db_name = "Cinema";	
 
 // Attempting to connected to the database
