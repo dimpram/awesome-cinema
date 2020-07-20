@@ -2,7 +2,7 @@
 An awesome movie reservation system!
 
 ![dashboard](images/dashboard.png)
-_Awesome Cinema Dashboard_
+_Awesome Cinema - Dashboard_
 
 ## What is it?
 Awesome Cinema is a **simple movie reservation** system based on LAMP (Linux, Apache, Mariadb, PHP) stack and it's part of my university assignment in Databases 1 course. It's also my first ever fullstack web application made entirely from scratch starting from the database ERD to frontend interface. Although this web app is far from being perfect it can provide a good starting point for a real Cinema reservation system.
@@ -41,14 +41,14 @@ source insert_data.sql
 
 ## Screenshots
 ![customers](images/customers.png)
-_Awesome Cinema customer management_
+_Awesome Cinema - customer management_
 
 ![sessions](images/sessions.png)
-_Awesome Cinema session management_
+_Awesome Cinema - session management_
 
 
 ![tickets](images/tickets.png)
-_Awesome Cinema ticket confirmation_
+_Awesome Cinema - ticket confirmation_
 
 ## License
 [View here](https://github.com/jimDragon/awesome-cinema/blob/master/LICENSE)
