@@ -36,7 +36,7 @@ source database.sql
 source insert_data.sql
 ```
 3. Add your mariadb username and password to `config/database.php` file in the corresponding variables.
-4. Navigate to `localhost/awesome_cinema`
+4. In your browser navigate to `localhost/awesome_cinema`
 5. Enjoy :)
 
 ## Screenshots
