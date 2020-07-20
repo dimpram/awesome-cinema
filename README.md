@@ -49,3 +49,6 @@ _Awesome Cinema session management_
 
 ![tickets](images/tickets.png)
 _Awesome Cinema ticket confirmation_
+
+## License
+[View here](https://github.com/jimDragon/awesome-cinema/blob/master/LICENSE)
