@@ -21,8 +21,8 @@ _Awesome Cinema - ERD_
 Because this is a univesity project, some assumptions regarding cinema organization were made in order to be a realistically achivable assignment. Some of them include:
 - All the available sessions are considered active sessions.
 - The seat configuration in a room doesn't follow any amphitheatrical principals.
-- Each customer can reserve 5 tickets of a movie session and thus a maximum of 5 people should be considered in each reservation and later in the ciname room.
-- By the time that a reservation is completed successfully, each customer in that reservation is free to choose and **sit on any seat** in the movie room.
+- Each customer can reserve 5 tickets of a movie session and thus a maximum of 5 people should be considered in each reservation and later in the cinema room.
+- By the time that a reservation is completed successfully, each customer in that reservation is free to choose and **any seat** in the movie room.
 
 ## Project setup
 ### Requirements
@@ -41,6 +41,8 @@ source insert_data.sql
 3. Add your mariadb username and password to `config/database.php` file in the corresponding variables.
 4. In your browser navigate to `localhost/awesome_cinema`
 5. Enjoy :)
+
+If the interface doesn't load the proper data you may have to change the permissions of the `/srv/http/`
 
 ## Screenshots
 ![customers](images/customers.png)
